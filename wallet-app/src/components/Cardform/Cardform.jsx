@@ -3,6 +3,7 @@ import Card from '../Card/Card';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Select from 'react-select';
+import { Link } from 'react-router-dom';
 import ninjabank from '../../assets/vendor-ninja.svg';
 import blockchain from '../../assets/vendor-blockchain.svg';
 import evilcorp from '../../assets/vendor-evil.svg';
@@ -44,6 +45,7 @@ function Cardform() {
   const [cardholderName, setCardholderName] = useState('');
   const [selectedOption, setSelectedOption] = useState(null);
   const [expirationDate, setExpirationDate] = useState('');
+  
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
@@ -59,7 +61,8 @@ function Cardform() {
   return (
     <article className='form'>
       <Card 
-          cardNumber={cardNumber} cardholderName={cardholderName}
+          cardNumber={cardNumber} 
+          cardholderName={cardholderName}
           bgColor={selectedOption ? selectedOption.color : null}
           image={selectedOption ? selectedOption.image : null}
           expirationDate={expirationDate} 
@@ -100,7 +103,7 @@ function Cardform() {
           onChange={handleOptionChange} 
           getOptionLabel={getOptionLabel}
        />
-
+      <Link to='/'>
       <button className='form__button' onClick={() => {
           dispatch(addCard({
           cardNumber: cardNumber,
@@ -110,6 +113,7 @@ function Cardform() {
           expirationDate: expirationDate
         }));
       }}>ADD CARD</button>
+      </Link>
     </article>
   );
 }

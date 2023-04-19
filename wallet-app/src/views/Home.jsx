@@ -14,7 +14,7 @@ function Home() {
             </section>
             
             <section className='main__mid'>
-                
+                <CardStack/>
             </section>
 
             <section className='main__bottom'>

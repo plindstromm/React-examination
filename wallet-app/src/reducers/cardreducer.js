@@ -1,5 +1,5 @@
 const initialState = {
-    card: []
+    cards: []
 }
 
 
@@ -10,7 +10,7 @@ const reducer = ( state = initialState, action) => {
 
         return{ 
             ...state, 
-            card: [...state.card, action.payload]
+            cards: [...state.cards, action.payload]
         }
 
         default:
