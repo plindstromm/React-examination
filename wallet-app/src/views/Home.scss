@@ -1,0 +1,21 @@
+@import '../scss/mixins';
+
+.main{
+    @include flexcol;
+    height: 100vh;
+    &__header{
+        margin-bottom: auto;
+    }
+
+    &__mid{
+        min-width: 20rem;
+        height: 20rem;
+        background-color: aquamarine;
+    }
+
+   
+
+    &__bottom__button{
+        padding: 1rem;
+    }
+}

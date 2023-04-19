@@ -1,0 +1,48 @@
+@import '../../scss/mixins';
+
+.form{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .6;
+    font-size: 12px;
+    @include flexcol;
+    padding: 1rem;
+
+
+    
+    &__input{
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid;
+        width: 20rem;
+        height: 56px;
+        
+        
+    }
+    
+    &__button{
+        padding: 1rem;
+        width: 100%;   
+        margin-top: 2rem;
+        border: none;
+        border-radius: 8px;
+        background-color: black;
+        color: aliceblue;
+    }
+
+    &__button:hover{
+        cursor: pointer;
+        background-color: gray;
+        color: black;
+    }
+
+    &__dropdown{
+        width: 100%;
+    }
+ 
+}
+
+label{
+    margin-top: 2rem;
+    align-self: flex-start;
+}
