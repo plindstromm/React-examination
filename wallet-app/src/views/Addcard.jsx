@@ -1,6 +1,5 @@
 import './Addcard.scss'
 import Top from '../components/Top/Top'
-import Card from '../components/Card/Card';
 import Cardform from '../components/Cardform/Cardform';
 
 
@@ -13,6 +12,7 @@ function AddCard() {
                  <Top title="ADD A NEW BANK CARD" description="NEW CARD"/>
             
             <section className='add__form'>
+                
                 <Cardform/>
             </section>
         </section>
