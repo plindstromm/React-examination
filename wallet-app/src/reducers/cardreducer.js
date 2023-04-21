@@ -1,5 +1,7 @@
+
 const initialState = {
-    cards: []
+    cards: [],
+    selectedCard: null
 }
 
 
@@ -13,10 +15,20 @@ const reducer = ( state = initialState, action) => {
             cards: [...state.cards, action.payload]
         }
 
+        case 'SELECTED_CARD':
+            const matchingCard = state.cards.find((card)=> card.cardNumber == action.payload);
+            return{
+                ...state,
+                selectedCard: matchingCard
+            };
+            
         default:
             return state;
 
-    }
+    };
+
+   
+    
 }
 
 export default reducer;

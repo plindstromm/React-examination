@@ -7,15 +7,30 @@
         margin-bottom: auto;
     }
 
+    &__highlight{
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+    }
+
     &__mid{
         min-width: 20rem;
         height: 20rem;
-        margin-bottom: auto;
+
+        
     }
 
    
 
     &__bottom__button{
         padding: 1rem;
+        border: none;
+        border-radius: 8px;
+        background-color: black;
+        color: aliceblue;
+        width: 10rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 }

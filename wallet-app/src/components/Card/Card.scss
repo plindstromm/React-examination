@@ -4,13 +4,14 @@
 .card{
     padding: 1rem;
     height: 12rem;
-    background-color:#D0D0D0;
+    background-color:#878787;
     border-radius: 8px;
-    width: 100%;
-    filter: drop-shadow(0px 0px 32px rgba(0, 0, 0,  ));
+    width: 20rem;
+    filter: drop-shadow(0px 0px 32px rgb(98, 98, 98));
 
     &__upper{
         @include flexrow;
+        
         
     }
 
@@ -45,6 +46,11 @@
 
     &__lower__name{
         margin-right: auto;
+        font-size: 15px;
+    }
+
+    &__lower__valid{
+        font-size: 15px;
     }
 
   }

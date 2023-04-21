@@ -8,4 +8,13 @@ function addCard(item){
 
 }
 
-export { addCard }
+
+
+function selectedCard(cardNumber) {
+    return {
+    type: 'SELECTED_CARD',
+    payload: cardNumber
+    }
+  }
+
+  export { addCard, selectedCard }

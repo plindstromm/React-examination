@@ -21,7 +21,7 @@ const options = [
     value: 'NINJA BANK',
     label: 'Ninja Bank',
     image: ninjabank,
-    color: '#222222',
+    color: '#808080',
   },
   {
     value: 'BLOCK CHAIN',
