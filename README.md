@@ -26,7 +26,7 @@ Följ dessa steg för att klona och köra projektet lokalt:
 
    cd wallet-app
 
-  npm install
+     npm install
 
    npm run dev
 
