@@ -30,3 +30,4 @@ Följ dessa steg för att klona och köra projektet lokalt:
 
    npm run dev
 
+To install the package, use the `npm install` command.
