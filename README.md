@@ -24,10 +24,10 @@ Följ dessa steg för att klona och köra projektet lokalt:
    ```bash
    git clone https://github.com/plindstromm/React-examination.git
 
-   `cd wallet-app`
+   cd wallet-app
 
-   npm install
+  `npm install`
 
    npm run dev
 
-To install the package, use the `npm install` command.
+
